@@ -21,7 +21,11 @@
 
 
 .hero-bg{
+     background-image: url(../img/ai.png);
+    background-repeat: no-repeat;
+    background-position: right;
     background-color: black;
+   background-size:;
 }
 nav{
     font-family: var(--font-roboto);
