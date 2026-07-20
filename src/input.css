@@ -7,10 +7,33 @@
 
 
 
+
 :root{
     --font-montserrat: "Montserrat", sans-serif;
     --font-baloo: "Baloo", sans-serif;
-    --font-moon: "Moon Dance", sans-serif;
+    --font-moon: "Moon Dance", cursive;
+    --font-roboto: "Roboto", sans-serif;
     --color-yello: "#ECA922"
     --color-redd: "#F03434"
+    --color-blu: "#0008CA"
+}
+
+
+
+.hero-bg{
+    background-color: black;
+}
+nav{
+    font-family: var(--font-roboto);
+}
+
+h1{
+    font-family: var(--font-baloo);
+    color: white;
+}
+h2{
+    font-family: var(--font-moon);
+}
+.text{
+    font-family: var(--font-moon);
 }
