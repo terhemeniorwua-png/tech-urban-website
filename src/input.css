@@ -63,6 +63,15 @@
     height: 15em;
     background-repeat:no-repeat;
 }
+.testimonial{
+    /* background-image:  */
+    background: url(../img/elli1.png),rgba(0, 0, 0, 1);
+    /* filter: blur(8px);
+    z-index: -1; */
+    /* transform: scale(1.1); */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 nav{
     font-family: var(--font-roboto);
 }
