@@ -69,8 +69,26 @@
     /* filter: blur(8px);
     z-index: -1; */
     /* transform: scale(1.1); */
-    background-size: contain;
+    background-size: 30em;
     background-repeat: no-repeat;
+}
+.p2{
+      background:url(../img/elli1.png);
+      background-position: right;
+    background-size: 10em;
+    background-repeat: no-repeat;
+}
+.p3{
+      background:url(../img/elli1.png);
+      background-position:left;
+    /* background-size: 10em; */
+    background-repeat: no-repeat;
+}
+.innovation{
+    background-image: url(../img/Frame-18.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 nav{
     font-family: var(--font-roboto);
