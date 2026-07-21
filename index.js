@@ -5,16 +5,25 @@ async function fetUsers() {
      let response = await fetch('https://dummyjson.com/posts');
     let users = await response.json()
    
-    
-    let storeUsers = users.posts.map(user => {
-        return user.body
+    let posts = []
+     users.posts.forEach(user => {
+         posts.push(user.body)
     }); 
-    return storeUsers
+    return posts
    } catch(e){
     console.log(e.message)
    }
 }
 fetUsers().then(res => {
-     let speaker1 = document.querySelector('.speaker1');
- speaker1.innerText= res
+     let speaker1 = document.querySelectorAll('.speaker1');
+     speaker1.forEach((value, indx, array) =>{
+        res.forEach((val, index, arr) =>{
+            if(indx === index){
+                array[indx].innerText= arr[index]
+            }
+        })
+        
+     })
+    
+    // console.log(res)
 });
