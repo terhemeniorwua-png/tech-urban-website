@@ -116,3 +116,19 @@ h2, .text{
     transition-duration: 0.3s;
     color:rgba(0, 0, 255, 0.889);
 }
+
+.animation{
+    animation: fade-In;
+    animation-timing-function: ease-in;
+    animation-duration: 0.8s;
+    animation-delay: 0;
+}
+
+@keyframes fade-In{
+    from{
+    opacity: 0;
+}
+to{
+    opacity: 100;
+}
+}
