@@ -22,21 +22,21 @@
 
 .hero-bg{
      background-image: url(../img/ai.png);
-    background-repeat: no-repeat;
+    /* background-position-y: top; */
     background-position: right;
     background-color: black;
-   background-size:;
+    background-repeat: no-repeat;
 }
 nav{
     font-family: var(--font-roboto);
 }
 
-h1{
+h1, .sub{
     font-family: var(--font-baloo);
 }
-h2{
+h2, .text{
     font-family: var(--font-moon);
 }
-.text{
-    font-family: var(--font-moon);
+.nums, .bodyText{
+    font-family: var(--font-montserrat);
 }
