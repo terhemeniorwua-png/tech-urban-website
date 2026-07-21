@@ -18,9 +18,3 @@ fetUsers().then(res => {
      let speaker1 = document.querySelector('.speaker1');
  speaker1.innerText= res
 });
-// console.log(res)
-
-
-
-// let content = document.querySelector('div')
-// console.log(content.classList)
