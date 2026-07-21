@@ -5,16 +5,18 @@ API-link: https://dummyjson.com/posts
 
 fb = <i class="fa-brands fa-facebook-f"></i>
 
-linkdin = <i class="fa-brands fa-square-linkedin"></i>
+linkdin = 
 
 utube = <i class="fa-brands fa-youtube"></i>
 
-twitter = <i class="fa-brands fa-twitter"></i>
+twitter = 
 
 instagram = <i class="fa-brands fa-instagram"></i>
 
-github = <i class="fa-brands fa-github"></i>
+github = 
 
-likesearch = <i class="fa-brands fa-chrome"></i>
+likesearch = 
 
 claude = <i class="fa-brands fa-claude"></i>
+
+fingers = 
