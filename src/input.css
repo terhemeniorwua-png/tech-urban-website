@@ -27,6 +27,42 @@
     background-color: black;
     background-repeat: no-repeat;
 }
+.hac{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-image: url(../img/hac.png);
+    background-position: center;
+    height: 15em;
+    background-repeat:no-repeat;
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-image: url(../img/workshop.png);
+    background-position: center;
+    height: 15em;
+    background-repeat:no-repeat;
+}
+.semi{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+     background-image: url(../img/seminar.png);
+    background-position: center;
+    height: 15em;
+    background-repeat:no-repeat;
+}
+.pitch{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-image: url(../img/pitch.png);
+    background-position: center;
+    height: 15em;
+    background-repeat:no-repeat;
+}
 nav{
     font-family: var(--font-roboto);
 }
@@ -39,4 +75,9 @@ h2, .text{
 }
 .nums, .bodyText{
     font-family: var(--font-montserrat);
+}
+.space{
+    font-size: 5em;
+    font-weight: 900;
+    color: white;
 }

@@ -14,14 +14,10 @@
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
-    --text-6xl: 3.75rem;
-    --text-6xl--line-height: 1;
     --text-7xl: 4.5rem;
     --text-7xl--line-height: 1;
     --text-8xl: 6rem;
@@ -214,20 +210,11 @@
   .grid {
     display: grid;
   }
-  .table {
-    display: table;
-  }
   .h-120 {
     height: calc(var(--spacing) * 120);
   }
   .w-\[70\%\] {
     width: 70%;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -268,18 +255,6 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
-  .border-3 {
-    border-style: var(--tw-border-style);
-    border-width: 3px;
-  }
-  .border-4 {
-    border-style: var(--tw-border-style);
-    border-width: 4px;
-  }
   .border-r-4 {
     border-right-style: var(--tw-border-style);
     border-right-width: 4px;
@@ -317,11 +292,11 @@
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
-  .py-5 {
-    padding-block: calc(var(--spacing) * 5);
-  }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
+  }
+  .py-16 {
+    padding-block: calc(var(--spacing) * 16);
   }
   .py-32 {
     padding-block: calc(var(--spacing) * 32);
@@ -354,10 +329,6 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
-  }
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
@@ -365,10 +336,6 @@
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
-  }
-  .text-6xl {
-    font-size: var(--text-6xl);
-    line-height: var(--tw-leading, var(--text-6xl--line-height));
   }
   .text-7xl {
     font-size: var(--text-7xl);
@@ -400,18 +367,8 @@
   .text-\[\#ECA922\] {
     color: #ECA922;
   }
-  .text-\[\[\#ECA922\]\] {
-    color: [#ECA922];
-  }
   .text-white {
     color: var(--color-white);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
 }
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Audiowide&family=Baloo+2:wght@400..800&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Moon+Dance&family=Offside&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Tangerine:wght@400;700&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -430,6 +387,42 @@
   background-color: black;
   background-repeat: no-repeat;
 }
+.hac {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-image: url(../img/hac.png);
+  background-position: center;
+  height: 15em;
+  background-repeat: no-repeat;
+}
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-image: url(../img/workshop.png);
+  background-position: center;
+  height: 15em;
+  background-repeat: no-repeat;
+}
+.semi {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-image: url(../img/seminar.png);
+  background-position: center;
+  height: 15em;
+  background-repeat: no-repeat;
+}
+.pitch {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-image: url(../img/pitch.png);
+  background-position: center;
+  height: 15em;
+  background-repeat: no-repeat;
+}
 nav {
   font-family: var(--font-roboto);
 }
@@ -442,6 +435,11 @@ h2, .text {
 .nums, .bodyText {
   font-family: var(--font-montserrat);
 }
+.space {
+  font-size: 5em;
+  font-weight: 900;
+  color: white;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -451,17 +449,11 @@ h2, .text {
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
     }
   }
 }
