@@ -591,9 +591,6 @@
   --font-baloo: "Baloo", sans-serif;
   --font-moon: "Moon Dance", cursive;
   --font-roboto: "Roboto", sans-serif;
-  --color-yello: "#ECA922"
-    --color-redd: "#F03434"
-    --color-blu: "#0008CA";
 }
 .hero-bg {
   background-image: url(../img/ai.png);
