@@ -15,8 +15,8 @@ async function fetUsers() {
    }
 }
 fetUsers().then(res => {
-     let speaker1 = document.querySelectorAll('.speaker1');
-     speaker1.forEach((value, indx, array) =>{
+     let contents = document.querySelectorAll('.content');
+     contents.forEach((value, indx, array) =>{
         res.forEach((val, index, arr) =>{
             if(indx === index){
                 array[indx].innerText= arr[index]
