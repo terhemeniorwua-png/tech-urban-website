@@ -1,5 +1,11 @@
 'use strict'
 
+
+document.addEventListener("DOMContentLoad", function () {
+  alert("DOM is loaded.");
+});
+
+
 async function fetUsers() {
 
     let controller = new AbortController()
