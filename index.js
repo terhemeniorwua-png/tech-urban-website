@@ -24,13 +24,16 @@ res.forEach(val => {
   <div class="border border-[#0007ca68] shadow-2xl text-[#959595] px-[5%]">
    <h1 class="text-3xl font-black text-[#ECA922] pt-10 pb-5">${val.title}</h1>
     <p class="font-medium">${val.body}</p>
-    <div>Tags: ${val.tags.map(val =>{
-        
+    
+    <div class="pt-5">Tags: ${val.tags.map(val =>{
+        return `<span class="px-5 underline">${val}<span>`
     })}</div>
-    <div class="grid grid-cols-3 text-black pt-10 pb-5 gap-10">
-    <p class="bg-[#959595] p-2 rounded-full">Views: ${val.views}</p>
+
+
+    <div class="flex flex-col h-auto text-black pt-10 pb-5 gap-10">
+   <div class="m-auto flex gap-12 justify-center"> <p class="bg-[#959595] p-2 rounded-full">Views: ${val.views}</p>
     <p class="bg-[#959595] p-2 rounded-full">Likes: ${val.reactions.likes}</p>
-    <p class="bg-[#959595] p-2 rounded-full">Dislikes: ${val.reactions.dislikes}</p>
+    <p class="bg-[#959595] p-2 rounded-full">Dislikes: ${val.reactions.dislikes}</p></div>
     </div>
    </div>
  `
