@@ -1,10 +1,21 @@
 'use strict'
 
 async function fetUsers() {
+
+    let controller = new AbortController()
+
+    const timoutId = setTimeout(() =>{
+        controller.abort(new Error('Request timeout'))
+    }, 3000)
+
    try{
-     let response = await fetch('https://dummyjson.com/posts');
+     let response = await fetch('https://dummyjson.com/posts', {
+        signal: controller.signal
+     });
+
     let users = await response.json()
-if(!users){
+
+if(!response){
     throw new Error("Request failed")
 }
      let blog = users.posts.map(user => {
@@ -13,6 +24,8 @@ if(!users){
     return blog
    } catch(e){
     document.write(e.message)
+   } finally{
+    clear(timoutId)
    }
 }
 fetUsers().then(res => {
@@ -38,28 +51,13 @@ res.forEach(val => {
    </div>
  `
     contents.innerHTML += outPut
-
-
-   }
-       
-    
-);
- 
-}
-);
+   });});
   
-
-
-
     let hamburger = document.querySelector('#hamburger');
     let nav = document.querySelector('#mobileNav')
     let cancel = document.querySelector('#cancel')
 
-
-
 hamburger.addEventListener('click', ()=>{
-
-    
 
     if(nav.classList.contains('hidden')){
         nav.classList.remove('hidden')
@@ -83,3 +81,13 @@ cancel.addEventListener('click', ()=>{
         cancel.classList.add('hidden')
     }
 })
+
+
+// let button = document.getElementById('btn');
+// let body = document.querySelector('body');
+// button.addEventListener('click', ()=>{
+//     let isBgColorGrey = true;
+//    body.style.backgroundColor = isBgColorGrey ? "blue" : "grey";
+// //   isBgColorGrey = !isBgColorGrey;
+//     // alert('Success')
+// })
