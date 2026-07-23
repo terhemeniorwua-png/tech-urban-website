@@ -17,24 +17,24 @@ if(!users){
 }
 fetUsers().then(res => {
 
-//       let contents = document.querySelector('.blogs');
-// res.forEach(val => {
-//    let outPut = 
-// `
-//   <div class="border border-gray-100 shadow-lg text-gray-600 pt-12 px-[5%]">
-//    <h1 class="text-3xl font-black text-black pb-5">${val.title}</h1>
-//     <p class="font-medium">${val.body}</p>
-//     <div>Tags: ${val.tags.map(val =>{
+      let contents = document.querySelector('.blogs');
+res.forEach(val => {
+   let outPut = 
+`
+  <div class="border border-gray-100 shadow-lg text-gray-600 pt-12 px-[5%]">
+   <h1 class="text-3xl font-black text-black pb-5">${val.title}</h1>
+    <p class="font-medium">${val.body}</p>
+    <div>Tags: ${val.tags.map(val =>{
         
-//     })}</div>
-//     <div class="grid grid-cols-3 pt-10 pb-5 gap-10">
-//     <p class="bg-gray-100 p-2 rounded-full">Views: ${val.views}</p>
-//     <p class="bg-gray-100 p-2 rounded-full">Likes: ${val.reactions.likes}</p>
-//     <p class="bg-gray-100 p-2 rounded-full">Dislikes: ${val.reactions.dislikes}</p>
-//     </div>
-//    </div>
-//  `
-//     contents.innerHTML += outPut
+    })}</div>
+    <div class="grid grid-cols-3 pt-10 pb-5 gap-10">
+    <p class="bg-gray-100 p-2 rounded-full">Views: ${val.views}</p>
+    <p class="bg-gray-100 p-2 rounded-full">Likes: ${val.reactions.likes}</p>
+    <p class="bg-gray-100 p-2 rounded-full">Dislikes: ${val.reactions.dislikes}</p>
+    </div>
+   </div>
+ `
+    contents.innerHTML += outPut
 
 
    }
@@ -42,9 +42,9 @@ fetUsers().then(res => {
     
 );
  
-// }
-// );
-    // console.log(res)
+}
+);
+  
 
 
 
@@ -52,16 +52,7 @@ fetUsers().then(res => {
     let nav = document.querySelector('#mobileNav')
     let cancel = document.querySelector('#cancel')
 
-// const display = () =>{
-//           nav.style.display = 'block';
-//     cancel.style.display = 'block';
-//     hamburger.style.display = 'hidden'
-// }
-// const cancelled = () =>{
-//           nav.style.display = 'hidden';
-//     cancel.style.display = 'hidden';
-//     hamburger.style.display = 'block'
-// }
+
 
 hamburger.addEventListener('click', ()=>{
 

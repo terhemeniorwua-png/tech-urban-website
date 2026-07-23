@@ -10,14 +10,35 @@
 </head>
 <body>
       <!-- head -->
+       
+   
+
+  
     <section class="hero-bg text-white text-xl">
 
     <head>
+
         <div class="flex justify-between items-center pt-5 px-10">
-            <div>
+            <div class="flex justify-between items-center">
                 <a href="#"><img src="img/logo.png" alt=""></a>
+                
             </div>
-            <nav>
+
+
+         <!-- mobile nav -->
+
+    <div id="mobileNav" class="hidden absolute right-2 top-24 border text-center p-3 py-8 bg-[#000000e2] font-bold">
+        <ul class=" flex flex-col gap-3">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="galley.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+
+
+  <!-- Desktop nav -->
+            <nav class="max-md:hidden">
                 <ul class="flex gap-20 items-center">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="galley.html">Gallery</a></li>
@@ -26,9 +47,13 @@
                 </ul>
             </nav>
            
-                <button class="bg-[#ECA922] yel-btn text-[#0008CA] p-1 rounded-2xl px-5"> 
+                <button class="bg-[#ECA922] max-md:hidden yel-btn text-[#0008CA] p-1 rounded-2xl px-5"> 
                     <a href="#">Register</a>
                 </button>
+
+                <!-- Hanbuger -->
+                <a href="#" class="md:hidden text-4xl" id="hamburger"><i class="fa-solid fa-bars"></i></a>
+                <a href="#" id="cancel" class="hidden text-4xl "><i class="fa-solid fa-x"></i></a>
         </div>
     </head>
 </section>
