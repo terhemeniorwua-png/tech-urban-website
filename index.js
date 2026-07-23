@@ -4,12 +4,11 @@ async function fetUsers() {
    try{
      let response = await fetch('https://dummyjson.com/posts');
     let users = await response.json()
-//    let blog = await users.posts.body
-
-    // let posts = []
+if(!users){
+    throw new Error("Request failed")
+}
      let blog = users.posts.map(user => {
-        //  posts.push(user.body)
-        return user.body
+        return user
     }); 
     return blog
    } catch(e){
@@ -17,16 +16,33 @@ async function fetUsers() {
    }
 }
 fetUsers().then(res => {
-     let contents = document.querySelector('.content');
-    //  contents.forEach((value, indx, array) =>{
-    //     res.forEach((val, index, arr) =>{
-    //         if(indx === index){
-    //             array[indx].innerText= arr[index]
-    //         }
-    //     })
+
+      let contents = document.querySelector('.blogs');
+res.forEach(val => {
+   let outPut = 
+`
+  <div class="border border-gray-100 shadow-lg text-gray-600 pt-12 px-[5%]">
+   <h1 class="text-3xl font-black text-black pb-5">${val.title}</h1>
+    <p class="font-medium">${val.body}</p>
+    <div>Tags: ${val.tags.map(val =>{
         
-    //  })
-    contents.innerText = res
+    })}</div>
+    <div class="grid grid-cols-3 pt-10 pb-5 gap-10">
+    <p class="bg-gray-100 p-2 rounded-full">Views: ${val.views}</p>
+    <p class="bg-gray-100 p-2 rounded-full">Likes: ${val.reactions.likes}</p>
+    <p class="bg-gray-100 p-2 rounded-full">Dislikes: ${val.reactions.dislikes}</p>
+    </div>
+   </div>
+ `
+    contents.innerHTML += outPut
+
+
+   }
+       
     
+);
+ 
+}
+);
     // console.log(res)
-});
+;
