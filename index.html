@@ -30,7 +30,7 @@
 
          <!-- mobile nav -->
 
-    <div class="hidden mobileNav border text-center p-3 bg-[#00000053] font-bold">
+    <div id="mobileNav" class="hidden absolute right-2 top-24 border text-center p-3 py-8 bg-[#000000e2] font-bold">
         <ul class=" flex flex-col gap-3">
             <li><a href="index.html">Home</a></li>
             <li><a href="galley.html">Gallery</a></li>
@@ -55,7 +55,8 @@
                 </button>
 
                 <!-- Hanbuger -->
-                <a href="#" class="md:hidden text-4xl hamburger"><i class="fa-solid fa-bars"></i></a>
+                <a href="#" class="md:hidden text-4xl" id="hamburger"><i class="fa-solid fa-bars"></i></a>
+                <a href="#" id="cancel" class="hidden text-4xl "><i class="fa-solid fa-x"></i></a>
         </div>
     </head>
 </section>

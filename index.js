@@ -46,10 +46,46 @@ fetUsers().then(res => {
 // );
     // console.log(res)
 
-const display = () =>{
-    let nav = document.querySelector('mobileNav')
-    console.log(nav)
-}
 
-// let hamburger = document.querySelector('.hamburger');
-// hamburger.onclick 
+
+    let hamburger = document.querySelector('#hamburger');
+    let nav = document.querySelector('#mobileNav')
+    let cancel = document.querySelector('#cancel')
+
+// const display = () =>{
+//           nav.style.display = 'block';
+//     cancel.style.display = 'block';
+//     hamburger.style.display = 'hidden'
+// }
+// const cancelled = () =>{
+//           nav.style.display = 'hidden';
+//     cancel.style.display = 'hidden';
+//     hamburger.style.display = 'block'
+// }
+
+hamburger.addEventListener('click', ()=>{
+
+    
+
+    if(nav.classList.contains('hidden')){
+        nav.classList.remove('hidden')
+        hamburger.classList.add('hidden')
+        nav.classList.add('block')
+        cancel.classList.remove('hidden')
+    } else{
+        nav.classList.remove('block');
+          nav.classList.add('hidden')
+          hamburger.classList.remove('hidden')
+    }
+})
+cancel.addEventListener('click', ()=>{
+
+     if(nav.classList.contains('block')){
+        nav.classList.remove('block')
+        nav.classList.add('hidden')
+        hamburger.classList.remove('hidden')
+        hamburger.classList.add('block')
+        cancel.classList.remove('block')
+        cancel.classList.add('hidden')
+    }
+})
