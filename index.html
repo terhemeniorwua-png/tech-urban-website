@@ -12,14 +12,35 @@
 <body>
 
     <!-- head -->
+
+
+   
+
+  
     <section class="hero-bg text-white text-xl">
 
     <head>
+
         <div class="flex justify-between items-center pt-5 px-10">
             <div class="flex justify-between items-center">
                 <a href="#"><img src="img/logo.png" alt=""></a>
                 
             </div>
+
+
+         <!-- mobile nav -->
+
+    <div class="hidden mobileNav border text-center p-3 bg-[#00000053] font-bold">
+        <ul class=" flex flex-col gap-3">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="galley.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+
+
+  <!-- Desktop nav -->
             <nav class="max-md:hidden">
                 <ul class="flex gap-20 items-center">
                     <li><a href="index.html">Home</a></li>
@@ -34,7 +55,7 @@
                 </button>
 
                 <!-- Hanbuger -->
-                <a href="#" class="md:hidden text-4xl"><i class="fa-solid fa-bars"></i></a>
+                <a href="#" class="md:hidden text-4xl hamburger"><i class="fa-solid fa-bars"></i></a>
         </div>
     </head>
 </section>
