@@ -12,7 +12,7 @@ if(!users){
     }); 
     return blog
    } catch(e){
-    console.log(e.message)
+    document.write(e.message)
    }
 }
 fetUsers().then(res => {
@@ -21,16 +21,16 @@ fetUsers().then(res => {
 res.forEach(val => {
    let outPut = 
 `
-  <div class="border border-gray-100 shadow-lg text-gray-600 pt-12 px-[5%]">
-   <h1 class="text-3xl font-black text-black pb-5">${val.title}</h1>
+  <div class="border border-[#0007ca68] shadow-2xl text-[#959595] px-[5%]">
+   <h1 class="text-3xl font-black text-[#ECA922] pt-10 pb-5">${val.title}</h1>
     <p class="font-medium">${val.body}</p>
     <div>Tags: ${val.tags.map(val =>{
         
     })}</div>
-    <div class="grid grid-cols-3 pt-10 pb-5 gap-10">
-    <p class="bg-gray-100 p-2 rounded-full">Views: ${val.views}</p>
-    <p class="bg-gray-100 p-2 rounded-full">Likes: ${val.reactions.likes}</p>
-    <p class="bg-gray-100 p-2 rounded-full">Dislikes: ${val.reactions.dislikes}</p>
+    <div class="grid grid-cols-3 text-black pt-10 pb-5 gap-10">
+    <p class="bg-[#959595] p-2 rounded-full">Views: ${val.views}</p>
+    <p class="bg-[#959595] p-2 rounded-full">Likes: ${val.reactions.likes}</p>
+    <p class="bg-[#959595] p-2 rounded-full">Dislikes: ${val.reactions.dislikes}</p>
     </div>
    </div>
  `
