@@ -31,7 +31,7 @@ if(!response){
    } catch(e){
     document.write(e.message)
    } finally{
-    clear(timoutId)
+    clearTimeout(timoutId)
    }
 }
 fetUsers().then(res => {
@@ -40,7 +40,7 @@ fetUsers().then(res => {
 res.forEach(val => {
    let outPut = 
 `
-  <div class="border border-[#0007ca68] shadow-2xl text-[#959595] px-[5%]">
+  <div class="border border-[#0007ca68] flex flex-col shadow-2xl text-[#959595] px-[5%]">
    <h1 class="text-3xl font-black text-[#ECA922] pt-10 pb-5">${val.title}</h1>
     <p class="font-medium">${val.body}</p>
     
@@ -49,7 +49,7 @@ res.forEach(val => {
     })}</div>
 
 
-    <div class="flex flex-col h-auto text-black pt-10 pb-5 gap-10">
+    <div class="flex m-auto flex-col h-auto text-black pt-10 pb-5 gap-10">
    <div class="m-auto flex gap-12 justify-center"> <p class="bg-[#959595] p-2 rounded-full">Views: ${val.views}</p>
     <p class="bg-[#959595] p-2 rounded-full">Likes: ${val.reactions.likes}</p>
     <p class="bg-[#959595] p-2 rounded-full">Dislikes: ${val.reactions.dislikes}</p></div>
