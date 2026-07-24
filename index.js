@@ -50,9 +50,9 @@ res.forEach(val => {
 
 
     <div class="flex m-auto flex-col h-auto text-black pt-10 pb-5 gap-10">
-   <div class="m-auto flex gap-12 justify-center"> <p class="bg-[#959595] p-2 rounded-full">Views: ${val.views}</p>
-    <p class="bg-[#959595] p-2 rounded-full">Likes: ${val.reactions.likes}</p>
-    <p class="bg-[#959595] p-2 rounded-full">Dislikes: ${val.reactions.dislikes}</p></div>
+   <div class="m-auto flex gap-12 justify-center"> <p class="bg-[#959595] p-2 rounded-full"><i class="fa-regular fa-eye"></i> ${val.views}</p>
+    <p class="bg-[#959595] p-2 rounded-full"><i class="fa-regular fa-thumbs-up"></i> ${val.reactions.likes}</p>
+    <p class="bg-[#959595] p-2 rounded-full"><i class="fa-regular fa-thumbs-down"></i> ${val.reactions.dislikes}</p></div>
     </div>
    </div>
  `
